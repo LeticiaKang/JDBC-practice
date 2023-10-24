@@ -36,7 +36,6 @@ public class UserDaoTest {
 
         // 유저를 조회한다(findByUserId)
         User user = userDao.findByUserId("wizard");
-        System.out.println("================================================"+user);
 
         // 조회로 찾은 유저 정보가 입력 받은 것고 같은지 확인한다.(isEqualTo)
         assertThat(user).isEqualTo(new User("wizard", "password", "name", "email"));
